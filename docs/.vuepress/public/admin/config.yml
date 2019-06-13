@@ -6,11 +6,11 @@ media_folder: ".vuepress/public/"
 public_folder: "../../"
 display_url: https://vigorous-lumiere-132d6a.netlify.com/
 collections:
-  - name: "pages" # Used in routes, e.g., /admin/collections/docs
-    label: "Pages" # Used in the UI
-    folder: "docs" # The path to the folder where the documents are stored
+  - name: "app" # Used in routes, e.g., /admin/collections/docs
+    label: "App" # Used in the UI
+    folder: "docs/apps" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
-    slug: "{{slug}}/README.md" # Filename template, e.g., title.md
+    slug: "{{slug}}" # Filename template, e.g., title.md
     fields: # The fields for each document, usually in front matter
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Description", name: "description", widget: "string"}
