@@ -62,31 +62,11 @@ module.exports = {
         link: 'https://vis.ethz.ch'
       }
     ],
-    // sidebar: {
-    //   '/guide/': [
-    //     {
-    //       title: 'Guide',
-    //       collapsable: false,
-    //       children: [
-    //         '',
-    //         'using-vue',
-    //       ]
-    //     }
-    //   ],
-    // },
-    // sidebar: [
-    //   '',
-    //   '/apps',
-    //   '/guide',
-    //   '/tools'
-    // ],
-    // displayAllHeaders: true,
-    // sidebar: {
-    //   '/guide/': [sidebar.getSidebarGroup('/guide/', 'Guide', false)],
-    //   '/apps/': [sidebar.getSidebarGroup('/apps/', 'Apps', false)],
-    //   '/tools': [sidebar.getSidebarGroup('/tools/', 'Tools', false)],
-    // }
-    sidebar: 'auto'
+    sidebar: {
+      '/guide/': [sidebar.getSidebarGroup('/guide/', 'Guide', false)],
+      '/apps/': [sidebar.getSidebarGroup('/apps/', 'Apps', false)],
+      '/tools': [sidebar.getSidebarGroup('/tools/', 'Tools', false)],
+    }
   },
 
   /**
