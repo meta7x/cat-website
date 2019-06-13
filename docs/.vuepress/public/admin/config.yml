@@ -4,14 +4,34 @@ backend:
   branch: master
 media_folder: ".vuepress/public/media"
 public_folder: "../../"
-display_url: https://vigorous-lumiere-132d6a.netlify.com/
+site_url: https://vigorous-lumiere-132d6a.netlify.com/
+logo_url: https://static.vis.ethz.ch/img/spirale_black.svg
+publish_mode: editorial_workflow
 collections:
-  - name: "app" # Used in routes, e.g., /admin/collections/docs
-    label: "App" # Used in the UI
+  - name: "guide" # Used in routes, e.g., /admin/collections/docs
+    label: "Guide" # Used in the UI
+    folder: "docs/guide" # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    slug: "{{slug}}" # Filename template, e.g., title.md
+    fields: # The fields for each document, usually in front matter
+      - {label: "Title", name: "title", widget: "string", required: "false"}
+      - {label: "Description", name: "description", widget: "string", required: "false"}
+      - {label: "Body", name: "body", widget: "markdown"}
+  - name: "tools" # Used in routes, e.g., /admin/collections/docs
+    label: "Tools" # Used in the UI
+    folder: "docs/tools" # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    slug: "{{slug}}" # Filename template, e.g., title.md
+    fields: # The fields for each document, usually in front matter
+      - {label: "Title", name: "title", widget: "string", required: "false"}
+      - {label: "Description", name: "description", widget: "string", required: "false"}
+      - {label: "Body", name: "body", widget: "markdown"}
+  - name: "apps" # Used in routes, e.g., /admin/collections/docs
+    label: "Apps" # Used in the UI
     folder: "docs/apps" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
     slug: "{{slug}}" # Filename template, e.g., title.md
     fields: # The fields for each document, usually in front matter
-      - {label: "Title", name: "title", widget: "string"}
-      - {label: "Description", name: "description", widget: "string"}
+      - {label: "Title", name: "title", widget: "string", required: "false"}
+      - {label: "Description", name: "description", widget: "string", required: "false"}
       - {label: "Body", name: "body", widget: "markdown"}
