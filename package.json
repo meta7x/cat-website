@@ -1,0 +1,22 @@
+{
+  "name": "cat",
+  "version": "0.0.1",
+  "description": "Homepage of the CAT comittee",
+  "main": "index.js",
+  "authors": {
+    "name": "Dimitri",
+    "email": "cat@vis.ethz.ch"
+  },
+  "repository": "/cat",
+  "scripts": {
+    "dev": "vuepress dev docs",
+    "build": "vuepress build docs"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@vuepress/plugin-back-to-top": "^1.0.0",
+    "@vuepress/plugin-medium-zoom": "^1.0.0",
+    "@vuepress/plugin-pwa": "^1.0.0-rc.1",
+    "vuepress": "^1.0.0"
+  }
+}
