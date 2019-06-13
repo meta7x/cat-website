@@ -10,7 +10,7 @@ module.exports = {
    */
   description: description,
 
-  // base: process.env.NODE_ENV == 'production' ? '/' : '/',
+  // base: process.env.NODE_ENV == 'production' ? '/cat-website/' : '/',
 
   /**
    * Extra tags to be injected to the page HTML `<head>`
@@ -23,7 +23,8 @@ module.exports = {
     ['link', { rel: 'manifest', href: '/manifest.json' }],
     // ['meta', { name: 'theme-color', content: '#3eaf7c' }],
     ['meta', { name: 'apple-mobile-web-app-capable', content: 'yes' }],
-    ['meta', { name: 'apple-mobile-web-app-status-bar-style', content: 'black' }]
+    ['meta', { name: 'apple-mobile-web-app-status-bar-style', content: 'black' }],
+    ['script', { src: 'https://identity.netlify.com/v1/netlify-identity-widget.js' }]
   ],
 
   /**
