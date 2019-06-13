@@ -10,7 +10,7 @@
   "repository": "/cat",
   "scripts": {
     "dev": "vuepress dev docs",
-    "build": "vuepress build docs"
+    "build": "export NODE_ENV=production && vuepress build docs"
   },
   "license": "MIT",
   "devDependencies": {

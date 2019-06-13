@@ -10,6 +10,8 @@ module.exports = {
    */
   description: description,
 
+  // base: process.env.NODE_ENV == 'production' ? '/' : '/',
+
   /**
    * Extra tags to be injected to the page HTML `<head>`
    *

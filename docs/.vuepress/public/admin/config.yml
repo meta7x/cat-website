@@ -1,0 +1,17 @@
+backend:
+  name: github
+  repo: meta7x/cat-website
+  branch: master
+media_folder: ".vuepress/public/"
+public_folder: "../../"
+display_url: https://meta7x.github.io/cat-website
+collections:
+  - name: "doss" # Used in routes, e.g., /admin/collections/docs
+    label: "Docs" # Used in the UI
+    folder: "docs" # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    slug: "{{slug}}" # Filename template, e.g., title.md
+    fields: # The fields for each document, usually in front matter
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Description", name: "description", widget: "string"}
+      - {label: "Body", name: "body", widget: "markdown"}
