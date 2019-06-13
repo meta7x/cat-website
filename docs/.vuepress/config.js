@@ -81,11 +81,12 @@ module.exports = {
     //   '/tools'
     // ],
     // displayAllHeaders: true,
-    sidebar: {
-      '/guide/': [sidebar.getSidebarGroup('/guide/', 'Guide', false)],
-      '/apps/': [sidebar.getSidebarGroup('/apps/', 'Apps', false)],
-      '/tools': [sidebar.getSidebarGroup('/tools/', 'Tools', false)],
-    }
+    // sidebar: {
+    //   '/guide/': [sidebar.getSidebarGroup('/guide/', 'Guide', false)],
+    //   '/apps/': [sidebar.getSidebarGroup('/apps/', 'Apps', false)],
+    //   '/tools': [sidebar.getSidebarGroup('/tools/', 'Tools', false)],
+    // }
+    sidebar: 'auto'
   },
 
   /**
