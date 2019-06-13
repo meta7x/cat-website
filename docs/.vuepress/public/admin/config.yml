@@ -8,9 +8,9 @@ display_url: https://vigorous-lumiere-132d6a.netlify.com/
 collections:
   - name: "pages" # Used in routes, e.g., /admin/collections/docs
     label: "Pages" # Used in the UI
-    folder: "docs/{{slug}}" # The path to the folder where the documents are stored
+    folder: "docs" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
-    slug: "README" # Filename template, e.g., title.md
+    slug: "{{slug}}/README.md" # Filename template, e.g., title.md
     fields: # The fields for each document, usually in front matter
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Description", name: "description", widget: "string"}
