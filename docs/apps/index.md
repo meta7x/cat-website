@@ -1,6 +1,10 @@
+---
+title: Index
+description: A descriptive list of all CAT apps.
+---
 
 
-# Apps
+# List of all Apps
 
 ## foo
 
