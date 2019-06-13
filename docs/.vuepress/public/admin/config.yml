@@ -2,7 +2,7 @@ backend:
   name: github
   repo: meta7x/cat-website
   branch: master
-media_folder: ".vuepress/public/"
+media_folder: ".vuepress/public/media"
 public_folder: "../../"
 display_url: https://vigorous-lumiere-132d6a.netlify.com/
 collections:
