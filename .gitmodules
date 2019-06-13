@@ -1,0 +1,3 @@
+[submodule "vuepress-sidebar-generator"]
+	path = vuepress-sidebar-generator
+	url = https://github.com/meta7x/vuepress-sidebar-generator
