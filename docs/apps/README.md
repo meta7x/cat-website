@@ -1,8 +1,6 @@
----
-sidebar: auto
----
 
-# Config
+
+# Apps
 
 ## foo
 

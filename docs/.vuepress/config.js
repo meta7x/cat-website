@@ -1,4 +1,5 @@
 const { description } = require('../../package')
+const sidebar = require('vuepress-sidebar-generator')
 
 module.exports = {
   /**
@@ -61,17 +62,29 @@ module.exports = {
         link: 'https://vis.ethz.ch'
       }
     ],
+    // sidebar: {
+    //   '/guide/': [
+    //     {
+    //       title: 'Guide',
+    //       collapsable: false,
+    //       children: [
+    //         '',
+    //         'using-vue',
+    //       ]
+    //     }
+    //   ],
+    // },
+    // sidebar: [
+    //   '',
+    //   '/apps',
+    //   '/guide',
+    //   '/tools'
+    // ],
+    // displayAllHeaders: true,
     sidebar: {
-      '/guide/': [
-        {
-          title: 'Guide',
-          collapsable: false,
-          children: [
-            '',
-            'using-vue',
-          ]
-        }
-      ],
+      '/guide/': [sidebar.getSidebarGroup('/guide/', 'Guide', false)],
+      '/apps/': [sidebar.getSidebarGroup('/apps/', 'Apps', false)],
+      '/tools': [sidebar.getSidebarGroup('/tools/', 'Tools', false)],
     }
   },
 
