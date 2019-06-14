@@ -1,7 +1,7 @@
 {
-  "name": "cat",
+  "name": "VIS Code",
   "version": "0.0.1",
-  "description": "Homepage of the CAT comittee",
+  "description": "Documentation of CAT and CIT applications",
   "main": "index.js",
   "authors": {
     "name": "Dimitri",

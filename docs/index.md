@@ -1,7 +1,7 @@
 ---
 home: true
 heroImage: /cat-kontur.png
-tagline: Homepage of the Computer Application Team
+tagline: Documentation of CAT and CIT applications
 features:
 - title: Feature 1 Title
   details: Feature 1 Description
